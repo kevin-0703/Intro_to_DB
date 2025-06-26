@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.22, for macos10.15 (x86_64)
 --
--- Host: 127.0.0.1    Database: alx_book_store
+-- Host: localhost    Database: alx_book_store
 -- ------------------------------------------------------
 -- Server version	8.0.27
 
@@ -155,4 +155,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-26 14:45:12
+-- Dump completed on 2025-06-26 14:53:53
