@@ -1,13 +1,11 @@
 import mysql.connector
-from mysql.connector import Error
 
 try:
-    # Connect to MySQL Server (adjust user/password as needed)
+    # Connect to MySQL Server
     connection = mysql.connector.connect(
         host="localhost",
-        user="alxbookstoreadmin",
-        password="password1",
-        database="alx_book_store"  # ← replace with your actual password
+        user="root",
+        password="your_password_here"  # ← Replace with your password
     )
 
     if connection.is_connected():
@@ -15,8 +13,8 @@ try:
         cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
         print("Database 'alx_book_store' created successfully!")
 
-except Error as e:
-    print(f"Error: {e}")
+except mysql.connector.Error as err:
+    print(f"Error: {err}")
 
 finally:
     if 'cursor' in locals():
